@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+        <link rel="stylesheet" href="UserRergisteration.css"/>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <form action="" id="form">
+                <h1 class="head-tag">
+                    Responsive Registration
+                    <br/>
+                    Form
+                </h1>
+                <div class="form-group input-control">
+                    <i class="fa fa-envelope"></i>
+                    <input type="text" id="email" class="input" placeholder="Email" name="email"/>
+                    <span></span>
+                </div>
+                <div class="form-group input-control">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" class="input" id="password" placeholder="Password"/>
+                    <span></span>
+                </div>
+                <div class="form-group input-control">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" class="input" id="password2" placeholder="Re-Password"/>
+                    <span></span>
+                </div>
+                <div class="name">
+                    <div class="form-group input-control firstname">
+                        <i class="fa fa-user"></i>
+                        <input type="text" class="input" id="fname" placeholder="First Name"/>
+                        <span></span>
+                    </div>
+                    <div class="form-group input-control lastname">
+                        <i class="fa fa-user"></i>
+                        <input type="text" class="input" id="lname" placeholder="Last Name"/>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="form-group input-control">
+                    <i class="fa fa-phone"></i>
+                    <input type="number" class="input" id="contact" placeholder="Contact"/>
+                    <span></span>
+                </div>
+                <div class="form-group gender">
+                    <input type="radio" id="male" placeholder="Male" name="gender" value="male"/>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" placeholder="Female" name="gender" value="female"/>
+                    <label for="female">Female</label>
+                    <span></span>
+                </div>
+                <div class="form-group input-control country">
+                    <select name="country" id="country" placeholder="Select a Country">
+                        <option selected hidden value="Default">Select a Country</option>
+                        <option value="India">India</option>
+                        <option value="US">US</option>
+                        <option value="UK">UK</option>
+                        <option value="China">China</option>
+                        <option value="Asia">Asia</option>
+                    </select>
+                    <span></span>
+                </div>
+                <div class="form-group terms">
+                    <input type="checkbox" placeholder="" name="agree"/>
+                    <label for="check">I agree with terms and conditions</label>
+                    <span></span>
+                </div>
+                <div class="form-group receive-news">
+                    <input type="checkbox" placeholder="Female" name="news"/>
+                    <label for="check">I want to receive the newsletter</label>
+                    <span></span>
+                </div>
+                <div class="form-group submit">
+                    <button type="submit" name="submit" id="register">Register</button>
+                </div>
+            </form>
+        </div>
+
+        <script src="UserRegisteration.js"></script>
+    </body>
+</html>

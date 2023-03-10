@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --grey-color: #c0c0c0;
+  --white-color: #ffffff;
+  --dark-yellow: #ffff00;
+  --red-color: #ff0000;
+  --green-color: #00ff00;
+}
+body {
+  background-color: var(--grey-color);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+  border-radius: 4px;
+  border-top: 8px solid var(--dark-yellow);
+  border-bottom: 20px solid var(--dark-yellow);
+  background-color: var(--white-color);
+  margin: 0 auto 0 auto;
+  padding-bottom: 10px;
+  width: 50%;
+}
+
+.head-tag {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.input-control {
+  position: relative;
+  width: 80%;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 13px 60px;
+  width: 80%;
+}
+
+.fa {
+  border-right: 1px solid;
+  font-size: 26px;
+  position: absolute;
+  padding: 7.5px;
+  text-align: center;
+  width: 8%;
+}
+.terms,
+.receive-news,
+.gender,
+.submit {
+  width: 80%;
+}
+.form-group {
+  margin: 20px auto 20px auto;
+}
+.name {
+  display: flex;
+  width: 88%;
+}
+.firstname {
+  width: 26%;
+}
+.lastname {
+  width: 26%;
+}
+.firstname .fa,
+.lastname .fa {
+  width: 26%;
+}
+#country {
+  margin-top: 10px;
+  padding: 10px 20px 10px 20px;
+  width: 92%;
+}
+#register {
+  background-color: var(--dark-yellow);
+  border: none;
+  border-radius: 4px;
+  width: 92%;
+  padding: 10px;
+}
+
+#register:hover {
+  background-color: var(--red-color);
+}
+
+.form-group span {
+  font-style: italic;
+  font-size: smaller;
+  visibility: hidden;
+}
+
+.form-group.error span {
+  color: var(--red-color);
+  visibility: visible;
+}
+
+.form-group.success input,
+.form-group.success select {
+  border: 2px solid var(--green-color);
+  visibility: visible;
+}
+
+.form-group.error .fa {
+  border-right: 2px solid var(--red-color);
+  visibility: visible;
+}
+
+.form-group.success .fa {
+  border-right: 2px solid var(--green-color);
+  visibility: visible;
+}
+
+.form-group.error input,
+.form-group.error select {
+  border: 2px solid var(--red-color);
+  border-radius: 4px;
+  visibility: visible;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+
+  .name {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #country {
+    width: 100%;
+  }
+
+  .firstname,
+  .lastname {
+    width: 78%;
+  }
+
+  .firstname .fa,
+  .lastname .fa {
+    width: 10%;
+  }
+}
+
+
